@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Father {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(25deg, purple, #0a0a9c);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 40px;
+    background: #fff;
+    border-radius: 8px;
+    /* width: 400px; */
+}
+
+.heading1 {
+    font-size: 45px;
+    font-weight: 700;
+    font-family: system-ui;
+    text-align: center;
+    color: purple;
+}
+
+.heading1::after {
+    content: '';
+    width: 30%;
+    height: 7px;
+    border-radius: 10px;
+    background: purple;
+    left: 35%;
+    position: relative;
+    bottom: -6px;
+    display: block;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 40px 0 30px 0;
+}
+
+.inputs input {
+    height: 45px;
+    width: 300px;
+    padding: 0 2px 0 5px;
+    background: #cac7c7;
+    outline: 1px;
+    border: 0px;
+    /* font-size: 14px; */
+    border-radius: 5px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.buttons .purple {
+    /* background: #cac7c7; */
+    height: 30px;
+    border-radius: 20px;
+    padding: 10px 25px;
+    height: auto;
+    font-size: 15px;
+    border: 0;
+    outline: 0;
+    font-family: sans-serif;
+    background: purple;
+    color: #fff;
+    cursor: pointer;
+}
+
+.gray {
+    background: #cac7c7 !important;
+    color: black !important;
+}
